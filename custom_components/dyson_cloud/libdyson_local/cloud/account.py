@@ -6,7 +6,7 @@ from typing import Callable, List, Optional
 import requests
 from requests.auth import AuthBase, HTTPBasicAuth
 
-from .libdyson_local.exceptions import (
+from libdyson_local.exceptions import (
     DysonAuthRequired,
     DysonInvalidAccountStatus,
     DysonInvalidAuth,

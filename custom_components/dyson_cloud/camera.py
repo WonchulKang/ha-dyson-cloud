@@ -4,9 +4,9 @@ import logging
 from homeassistant.core import HomeAssistant
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.components.camera import Camera
-from libdyson.const import DEVICE_TYPE_360_EYE, DEVICE_TYPE_360_HEURIST
-from libdyson.cloud.cloud_360_eye import DysonCloud360Eye
-from libdyson.cloud import DysonDeviceInfo
+from .libdyson_local.const import DEVICE_TYPE_360_EYE, DEVICE_TYPE_360_HEURIST
+from .libdyson_local.cloud.cloud_360_eye import DysonCloud360Eye
+from .libdyson_local.cloud import DysonDeviceInfo
 from datetime import timedelta
 
 from .const import DATA_ACCOUNT, DATA_DEVICES, DOMAIN

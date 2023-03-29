@@ -4,13 +4,13 @@ from typing import Optional
 from homeassistant import config_entries
 from homeassistant.components.zeroconf import async_get_instance
 from homeassistant.const import CONF_EMAIL, CONF_HOST, CONF_PASSWORD, CONF_USERNAME
-from libdyson.cloud.account import DysonAccountCN
+from .libdyson_local.cloud.account import DysonAccountCN
 import voluptuous as vol
-from libdyson.cloud import DysonAccount, REGIONS
-from libdyson.dyson_360_eye import Dyson360Eye
-from libdyson.discovery import DysonDiscovery
-from libdyson.const import DEVICE_TYPE_360_EYE
-from libdyson.exceptions import DysonException, DysonLoginFailure, DysonInvalidAccountStatus, DysonNetworkError, DysonOTPTooFrequently
+from .libdyson_local.cloud import DysonAccount, REGIONS
+from .libdyson_local.dyson_360_eye import Dyson360Eye
+from .libdyson_local.discovery import DysonDiscovery
+from .libdyson_local.const import DEVICE_TYPE_360_EYE
+from .libdyson_local.exceptions import DysonException, DysonLoginFailure, DysonInvalidAccountStatus, DysonNetworkError, DysonOTPTooFrequently
 from voluptuous.schema_builder import Required
 
 from .const import CONF_AUTH, CONF_REGION, DOMAIN
